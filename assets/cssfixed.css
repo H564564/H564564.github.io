@@ -1,0 +1,90 @@
+.header{
+background-color:#B7D1DA;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+height: 80px;
+}
+.hcolor{
+text-align: center;
+color: white;
+font-size: 3rem;
+font-family:Indie Flower;
+font-weight: bold;
+
+}
+.container-fluid {
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+.nav {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+.nav-link {
+display: block;
+padding: .5rem 1rem;
+color: #75704E;
+font-size: 30px;
+font-family: "setofont";
+font-weight: bold;
+}
+.nav-fill .nav-item {
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+text-align: center;
+margin: 7px;
+font-size:20px;
+
+}
+
+.bg{
+background-color: #E2E8DD;
+height: 60px;
+
+}
+footer{
+    padding: 10px;
+    text-align: center;
+     background-color: #B7D1DA;
+    font-family: "微軟正黑體"
+    
+}
+.pic6{
+    width:100px;0px;
+    height:100px;
+}
+
+@font-face{
+	font-family: 'setofont';
+	src: url(setofont.ttf);
+	
+}
+@font-face{
+
+	font-family: 'Indie Flower';
+	src: url(IndieFlower-Regular.ttf);
+}
+
+.cla{
+	background-color: #F3EFF5;
+}
+.back img{
+	position: fixed;
+	right:  20px;
+	bottom: 20px;
+	height: 100px;
+	width: auto;
+	z-index: 1;
+	
+}
