@@ -1,0 +1,52 @@
+.photo{
+width:450px;
+height: 450px;
+border-radius: 100px;
+}
+.photo:hover {
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.scr1, .scr2, .scr3, .scr4 {
+font-family: "微軟正黑體";
+text-indent: 1cm;
+position: fixed;
+top: 30%;
+left: 40%;
+z-index: 9998;
+height: 400px;
+width: 500px;
+background-color: white;
+background-image: url(whi1.png);
+background-size: cover;
+color: black;
+padding: 50px;
+border: 10px solid #B7D1DA;
+text-align: center;
+border-radius: 30px;
+}
+.container{
+	width: 100%;
+	height: 1000px;
+}
+.fb{
+	width: 63px;
+	height: 63px;
+}
+.ig{
+	width: 80px;
+	height: 80px;
+}
