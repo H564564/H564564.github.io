@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="assets/cssfixed.css" type="text/css">
+		<link rel="stylesheet" href="assets/cssinside.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+		<script>
+		function changeSrc()
+		{
+		document.getElementById('img').src="images/it4.png";
+		document.getElementById('bo1').src="images/box3.png";
+		}
+		function changeSrc2()
+		{
+		document.getElementById('img').src="images/it3.png";
+		document.getElementById('bo1').src="images/box2.png";
+		}
+		function changeSrc3()
+		{
+		document.getElementById('img').src="images/it2.png";
+		document.getElementById('bo1').src="images/box1.png";
+		}
+		</script>
+
+	</head>
+	<body class="cla" >
+		<!--header開始-->
+		<a href="index.html"><div class="header">
+			<p class="hcolor">CYCU &nbsp;FIELD</p>
+		</div></a>
+		<div class = "bg">
+			<ul class = "nav nav-fill" >
+				<li class="nav-item"><a class="nav-link" href="cycuspirit.html">中原精神</a></li>
+				<li class="nav-item"><a class="nav-link" href="inside.html">體育館</a></li>
+				<li class="nav-item"><a class="nav-link" href="outside.html">室外空間</a></li>
+				<li class="nav-item"><a class="nav-link" href ="aboutus.html">關於我們</a></li>
+				<li class="nav-item"><a class="nav-link" href="form.html">聯絡我們</a></li>
+			</ul>
+		</div>
+		<!--header結束-->
+		<div class ="flex-container">
+			<div class = "img-container">
+				<img src="images/floor3.png" class="f3" id = "f2" onclick="changeSrc()">
+				<img src="images/floor2.png" class="f2" id = "f1" onclick="changeSrc2()">
+				<img src="images/floor1.png" class="f1" id= "b1" onclick="changeSrc3()">
+			</div>
+			<div class = "img-container">
+				<img src = "images/it1.png" class = "img" id = "img">
+			</div>
+		</div>
+		<div class = "bo1 flex-container">
+			<img src = "images/box0.png" id = "bo1">
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br>
+		<div class="back">
+			<a href="introdution.html"><img src = "images/back.png" alt = "回上頁"></a>
+		</div>
+		
+		<footer>
+			<p><img src="images/6.png" class="pic6" align="left" /></p>
+			<p>地址：32023桃園市中壢區中北路200號<br>
+				200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.<br>
+			Tel：886-3-265-9999,+886-3-456-3171 傳真：+886-3-265-8888,+886-3-456-3176</p>
+		</footer>
+		
+		
+		
+	</body>
+</html>
