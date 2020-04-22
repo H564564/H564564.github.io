@@ -1,0 +1,109 @@
+.f1{
+	position: relative;
+	width: 600px;
+	height:184px;
+	top:115px;
+	left: 10px;
+	z-index: 1;
+}
+.f2{
+	position: relative;
+	width: 600px;
+	height:210px;
+	top:80px;
+	left: 10px;
+	z-index: 2;
+}
+.f3{
+	position: relative;
+	width: 600px;
+	height:184px;
+	top:105px;
+	left: 10px;
+	z-index: 3;
+}
+.pic3{
+	position: relative;
+	width: 600px;
+	height:200px;
+	top:75px;
+	left: 650px;
+	z-index: 1;
+
+}
+.pic2{
+	position: relative;
+	width: 600px;
+	height:210px;
+	top:85px;
+	left: 525px;
+	z-index: 2;
+}
+.pic1{
+	position: relative;
+	width: 600px;
+	height:200px;
+	top:90px;
+	left: 650px;
+	z-index: 3;
+}
+
+.pics img:last-child:hover{
+/* 滑入時第一張透明度設0 */
+opacity:0;}
+}
+footer{
+	top:400px;
+}
+
+.img-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+
+}
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.img{
+	position: absolute;
+	width:900px;
+	height: 650px;
+	top:210px;
+	right: 102px;
+	 
+}
+.bo1{
+	position: absolute;
+	width: 100%;
+	height: 545px;
+	top:850px;
+
+
+}
+.bo1 img{
+	max-width: 100%;
+	max-height: auto;
+	padding: 100px;	
+}
+
+
+
+
+
+
+
+
+.class3{
+	  position:relative;
+/* 淡出淡入效果2秒 */
+-webkit-transition: opacity 2s ease-in-out;
+-moz-transition: opacity 2s ease-in-out;
+-o-transition: opacity 2s ease-in-out;
+transition: opacity 2s ease-in-out;
+}
