@@ -1,0 +1,41 @@
+.container{
+	width: 100%;
+	height: auto;
+	padding: 100px;
+}
+table{
+	width: 70%;
+	border:3px double #6c6c6c;
+	font-size: 30px;
+	text-align: center;
+	margin: auto auto;
+	background-color: #E8E1EF;
+}
+table td{
+	border:3px double #6c6c6c;
+	width: 50%;
+	padding: 10px;
+
+}
+input{
+	height: 30px;
+	width: auto;
+	background-color:#F8F0FB;
+}
+.th{
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+
+}
+.button{
+	text-align: center;
+	padding: 20px;
+}
+.button input{
+	width: 70px;
+	height: 50px;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
