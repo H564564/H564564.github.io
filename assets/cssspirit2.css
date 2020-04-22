@@ -1,0 +1,84 @@
+.font{
+	text-align: center;
+	font-size: 40px;
+	margin:  20px 10%;
+	font-family: setofont;
+
+}
+.front1 {
+  
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  
+ 
+ 
+}
+.back1 {
+ 
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  
+  
+  transform: rotateY(-180deg);
+   
+}
+.front2{
+  
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  
+  
+
+}
+.back2 {
+ 
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+ 
+  
+  transform: rotateY(-180deg);
+}
+
+.photo:hover .back1 {
+  transform: rotateY(0deg);
+  
+}
+.photo:hover .front1 {
+  transform: rotateY(180deg);
+  
+}
+.photo2:hover .back2 {
+  transform: rotateY(0deg);
+  
+}
+.photo2:hover .front2 {
+  transform: rotateY(180deg);
+}
+
+
+img{
+  width:750px; 
+  height:695px;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+.item{
+  width:50%; 
+  height:695px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
