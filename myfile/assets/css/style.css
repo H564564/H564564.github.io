@@ -1,0 +1,312 @@
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+position: relative;
+max-width: 1200px;
+margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+content: '';
+position: absolute;
+width: 6px;
+background-color: white;
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
+}
+/* Container around content */
+.container {
+padding: 10px 40px;
+position: relative;
+background-color: inherit;
+width: 43.25%;
+}
+/* The circles on the timeline */
+.container::after {
+content: '';
+position: absolute;
+width: 25px;
+height: 25px;
+right: -17px;
+background-color: white;
+border: 4px solid #FF9F55;
+top: 15px;
+border-radius: 50%;
+z-index: 1;
+}
+/* Place the container to the left */
+.left {
+left: 0;
+}
+/* Place the container to the right */
+.right {
+left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+content: " ";
+height: 0;
+position: absolute;
+top: 22px;
+width: 0;
+z-index: 1;
+right: 30px;
+border: medium solid white;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent white;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+content: " ";
+height: 0;
+position: absolute;
+top: 22px;
+width: 0;
+z-index: 1;
+left: 30px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+left: -16px;
+}
+/* The actual content */
+.content {
+padding: 20px 30px;
+background-color: white;
+position: relative;
+border-radius: 6px;
+}
+.content p{
+	font-size: 15px;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+.timeline::after {
+left: 31px;
+}
+
+/* Full-width containers */
+.container {
+width: 100%;
+padding-left: 70px;
+padding-right: 25px;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.container::before {
+left: 60px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+/* Make sure all circles are at the same spot */
+.left::after, .right::after {
+left: 15px;
+}
+
+/* Make all right containers behave like the left ones */
+.right {
+left: 0%;
+}
+}
+
+html, body{
+	margin:0;
+}
+.outer{
+width: 80%;
+height: 1913px;
+background-color: #56876D;
+margin: 0 auto;
+padding: 30px;
+}
+.border{
+height: 100%;
+border: 3px solid white;
+}
+.top_area{
+	display: flex;
+}
+.aboutme{
+	width: 50%;
+	padding: 20px;
+	border-right: 4px dashed #DBD56E;
+	text-align: center;
+}
+.aboutme img{
+	height: 500px;
+	text-align: center;
+}
+.aboutme p{
+	font-family: "標楷體";
+	font-size: 25px;
+	color: white;
+	text-align: right;
+	margin-right: 15%;
+}
+.info{
+	width: 50%;
+	padding: 20px;
+}
+.title{
+	font-family: "標楷體";
+	font-size: 35px;
+	color: white;
+}
+.info_content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	font-size: 25px;
+	font-family: "標楷體";
+}
+.link{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+.link img{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.bt{
+	height: 40px;
+	font-size: 20px;
+	font-family: "標楷體";
+	border: 2px solid #DBD56E;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+}
+.bt span
+{
+transition: 0.5s; /* 過渡0.5秒 */
+text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+}
+.bt:hover
+{
+	background-color: rgba(255,255,255,0.2);;
+}
+.bt:hover span
+{
+padding-right: 5px; 
+/* 當鼠標在按鈕上時span內邊右距離25px */
+}
+.bt span:after{ 
+	content: "»"; /* span後面追加內容為» */
+opacity: 0; /* 透明度為0 */
+transition: 0.5s; /* 加個0.5秒的過渡 */
+}
+.bt:hover span:after
+{
+opacity: 1; /* 透明度為1，就是顯示 */
+}
+
+.skillbox{
+	padding-left: 3%;
+	padding-right: 3%;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+}
+.skillbox p{
+	color: #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.skillbox p:nth-child(2){
+	float: right;
+}
+.skill{
+	background-color: gray;
+	padding: 4px;
+	box-sizing: border-box;
+	border: 1px solid #6FFFE9;
+	border-radius: 15px;
+}
+.skill_level{
+	background: #6FFFE9;
+	width: 100%;
+	height: 25px;
+	border-radius: 15px;
+}
+.html{
+	width: 75%;
+	animation: html 2s;
+}
+.java{
+	width: 80%;
+	animation: java 2s;
+	
+}
+.C{
+	width: 70%;
+	animation: C 2s;
+	
+}
+.c{
+	width: 60%;
+	animation: c 2s;
+	
+}
+.data{
+	width: 60%;
+	animation: data 2s;
+
+}
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 75%;
+	}
+
+}
+@keyframes java{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 80%;
+	}
+
+}
+@keyframes C{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 70%;
+	}
+
+}
+@keyframes c{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 65%;
+	}
+
+}
+@keyframes data{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 60%;
+	}
+
+}

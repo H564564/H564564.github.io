@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			@import url("assets/css/style.css");
+		</style>
+	</head>
+	<body>
+		<div class = "outer">
+			<div class = "border">
+				<div class = "top_area">
+					<div class = "aboutme">
+						<img src="assets/images/me.jpg" alt="">
+						<p>－一口炸雞，一口可樂</p>
+					</div>
+					<div class = "info">
+						<div class = "title">
+							個人資訊
+						</div>
+						<div class = "info_content">
+							<p>姓名: 黃湧崴</p>
+							<p>無可救藥地拖延症患者</p>
+							<p>目前就讀: 中原大學資訊管理學系</p>
+							<p>興趣: MMORPG、動畫</p>
+							<div class = "link">
+								<a href="https://www.facebook.com/profile.php?id=100000595838715"><img src="assets/images/fb.png" alt=""></a>
+								<a href="https://www.instagram.com/hr98719"><img src="assets/images/ig.png" alt=""></a>
+								<a href="mailto:hr98719@gmail.com"><img src="assets/images/mail.png" alt=""></a>
+								<button type ="button" class = "bt" onclick="location.href='https://h564564.github.io/Personal_page/index.html'"><span>個人網頁</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "experience">
+					<div class = "title" style = "	margin: 10px 0 10px 71px;">
+						大學經歷
+					</div>
+					<div class="timeline">
+						<div class="container left">
+							<div class="content">
+								<h2>大一上 管理學</h2>
+								<p>木匠之家-衣服義賣</p>
+							</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h2>大一下</h2>
+								<p>企業概論-推廣普仁基金會義賣天使蛋糕</p>
+							</div>
+						</div>
+						<div class="container left">
+							<div class="content">
+								<h2>大二上</h2>
+								<p>網程-手機殼購物網站後端</p>
+								<p>資料結構-模擬倉儲管理系統</p>
+							</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h2>大二下</h2>
+								<p>多媒體-顯示卡販賣網頁前端</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "skill_container fade">
+					<div class = "title" style = "	margin: 10px 0 10px 71px;">專業能力</div>
+					<div class="skillbox">
+						<p>Html5/Css3</p>
+						<p>75%</p>
+						<div class="skill">
+							<div class="skill_level html" ></div>
+						</div>
+					</div>
+					<div class="skillbox">
+						<p>Java</p>
+						<p>80%</p>
+						<div class="skill">
+							<div class="skill_level java" ></div>
+						</div>
+					</div>
+					<div class="skillbox">
+						<p>C</p>
+						<p>70%</p>
+						<div class="skill">
+							<div class="skill_level C"></div>
+						</div>
+					</div>
+					<div class="skillbox">
+						<p>C#</p>
+						<p>65%</p>
+						<div class="skill">
+							<div class="skill_level c"></div>
+						</div>
+					</div>
+					<div class="skillbox">
+						<p>DataStructure</p>
+						<p>60%</p>
+						<div class="skill">
+							<div class="skill_level data"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$(window).on("load",function() {
+				$(window).scroll(function() {
+			var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+			$(".fade").each(function() {
+			/* Check the location of each desired element */
+			var objectBottom = $(this).offset().top + $(this).outerHeight();
+			
+			/* If the element is completely within bounds of the window, fade it in */
+			if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+			if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+			}
+			});
+			}).scroll(); //invoke scroll-handler on page-load
+			});
+			</script>
+		</body>
+	</html>
